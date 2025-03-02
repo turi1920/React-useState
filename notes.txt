@@ -1,1 +1,18 @@
 Hooks and simple projects
+
+1. BrowserRouter
+BrowserRouter is the main component used to enable routing in a React application. It listens to the URL in the browser and renders the appropriate content based on the URL's path. It allows users to navigate between different pages of your app by manipulating the browser's history (back, forward, and URL changes).
+
+2. Route
+A Route defines a path and maps it to a specific component. When the browser's URL matches the path specified in the Route, the corresponding component is rendered. You can define multiple routes for different paths in your app.
+
+3. Hooks
+React Router provides several hooks that help you interact with the router programmatically:
+
+useHistory: This hook allows you to navigate programmatically. You can push new paths to the browser's history, enabling navigation without user interaction with the browser's address bar.
+
+useLocation: This hook provides information about the current location or URL. It allows you to read details about the current path, search parameters, and hash.
+
+useParams: This hook lets you access dynamic parameters in the URL (e.g., parts of the URL like /user/:id). It allows you to grab values from the URL to use in your component.
+
+useRouteMatch: This hook checks if the current URL matches a specific path. It can be useful for conditional rendering based on the current route.
